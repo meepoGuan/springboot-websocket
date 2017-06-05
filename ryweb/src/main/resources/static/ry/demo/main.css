@@ -1,0 +1,21 @@
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-family:verdana,arial,"宋体";
+}
+.btn {
+	cursor:pointer;
+	border:1px solid #090909;
+	background:#181818;
+	border-radius:3px;
+	color:#fff;
+	padding:3px 15px;
+	font-size:14px;
+}
+.input {
+	border:1px solid #090909;
+	border-radius:3px;
+	padding:3px 15px;
+	font-size:14px;
+}

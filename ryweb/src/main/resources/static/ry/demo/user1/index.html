@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="demo">
+    <head>
+        <meta charset="utf-8">
+        <title>聊天</title>
+
+        <link rel="stylesheet" type="text/css" href="../../vendor/jqueryrebox/jquery-rebox-0.1.0.css"/>
+        <link rel="stylesheet" type="text/css" href="../../css/RongIMWidget.css"/>
+        <link rel="stylesheet" type="text/css" href="../main.css"/>
+
+    </head>
+    <body ng-controller="main">
+
+        <h2>当前用户：<span ng-bind="user"></span></h2><br/>
+        <label>用户Id：</label><input class="input" ng-model="targetId">
+        <button class="btn" ng-click="setconversation()">发送消息</button><br/> <br/>
+        <label>客服Id：</label><input class="input" ng-model="customerserviceId">
+        <button class="btn" ng-click="setcustomerservice()">发起咨询</button><br/> <br/>
+        <a href="http://support.rongcloud.cn/kb/NDE5" target="_blak">如何开通客服获取客服 Id ?</a>
+        <rong-widget></rong-widget>
+
+    </body>
+
+    <script src="../../vendor/jquery-2.2.2.js"></script>
+    <script src="../../vendor/angular-1.4.8.js"></script>
+
+    <!-- 融云IMLib -->
+    <script src="//cdn.ronghub.com/RongIMLib-2.2.5.min.js"></script>
+    <script src="//cdn.ronghub.com/RongEmoji-2.2.5.min.js"></script>
+    <script src="//cdn.ronghub.com/Libamr-2.2.5.min.js"></script>
+    <script src="//cdn.ronghub.com/RongIMVoice-2.2.5.min.js"></script>
+
+    <!-- 上传插件 -->
+    <script src="../../vendor/plupload.full.min-2.1.1.js"></script>
+    <script src="../../vendor/qiniu-1.0.17.js"></script>
+
+    <!-- 增强体验插件 -->
+    <script src="../../vendor/jqueryrebox/jquery-rebox-0.1.0.js"></script>
+
+    <!-- IM插件 -->
+    <script src="../../js/RongIMWidget.js"></script>
+    <script src="../common.js"></script>
+    <script src="./index.js"></script>
+
+</html>

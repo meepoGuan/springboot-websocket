@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="../../vendor/jqueryrebox/jquery-rebox-0.1.0.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/RongIMWidget.css"/>
+
+  </head>
+  <body>
+
+    <div ng-app="demo">
+      <div  ng-controller="main">
+        <button ng-click="show()">显示</button>
+        <rong-widget></rong-widget>
+      </div>
+    </div>
+
+    <script src="../../vendor/jquery-2.2.2.js"></script>
+    <script src="../../vendor/angular-1.4.8.js"></script>
+
+    <!-- 融云IMLib -->
+    <script src="//cdn.ronghub.com/RongIMLib-2.2.5.min.js"></script>
+    <script src="//cdn.ronghub.com/RongEmoji-2.2.5.min.js"></script>
+    <script src="//cdn.ronghub.com/Libamr-2.2.5.min.js"></script>
+    <script src="//cdn.ronghub.com/RongIMVoice-2.2.5.min.js"></script>
+    
+    <!-- 上传插件 -->
+    <script src="../../vendor/plupload.full.min-2.1.1.js"></script>
+    <script src="../../vendor/qiniu-1.0.17.js"></script>
+
+    <!-- 增强体验插件 -->
+    <script src="../../vendor/jqueryrebox/jquery-rebox-0.1.0.js"></script>
+
+    <!-- IM插件 -->
+    <script src="../../js/RongIMWidget.js"></script>
+    
+    <script src="./index.js"></script>
+  </body>
+
+
+</html>
